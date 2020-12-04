@@ -16,19 +16,22 @@ public class CourseGradesDemo {
 	public static void main(String[] args) {
 		
 		// Create GradedActivity object
-		// and set the score
+		// Set the score
 		GradedActivity labActivity = new GradedActivity();
 		labActivity.setScore(85.0);
 		
 		// Create a PassFailExam object passing in values
+		// Set score needed to pass, number of questions and questions missed
 		PassFailExam passFail = new PassFailExam(70.0, 20, 3);
 		
 		// Create a Essay object
-		// and set the amount missed for each category
+		// Set the amount missed for each category
+		// Grammar, spelling, correct length, content
 		Essay essay = new Essay();
 		essay.setScore(5.0, 5.0, 5.0, 10.0);
 		
 		// Create FinalExam object
+		// Set number of questions and questions missed
 		FinalExam finalExam = new FinalExam(50, 10);
 		
 		// Create CourseGrades object
